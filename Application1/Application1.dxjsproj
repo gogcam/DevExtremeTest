@@ -1,0 +1,1384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>4667c05d-f452-46c9-a44b-3b7eefeb089a</ProjectGuid>
+    <AutoAssignPort>True</AutoAssignPort>
+    <RunInSimulator>True</RunInSimulator>
+    <ApplicationPage>index.html</ApplicationPage>
+    <RootNamespace>Application1</RootNamespace>
+    <Name>Application1</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content\dx.android.holo-dark.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.android.holo-light.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.android5.light.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.common.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.dark.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.exporter.dark.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.exporter.light.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.ios.default.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.ios7.default.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.light.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.spa.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.tizen.black.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.tizen.white.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.win8.black.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\dx.win8.white.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\layouts\Desktop\DesktopLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\layouts\Desktop\DesktopLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\layouts\Desktop\DesktopLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\layouts\Empty\EmptyLayout.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\layouts\Empty\EmptyLayout.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\layouts\Empty\EmptyLayout.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="data\db.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="index.js" />
+    <Content Include="cordova.js" />
+    <Content Include="index.html" />
+    <Content Include="index.css" />
+    <Content Include="views\Map.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Map.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TrackerEdit.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TrackerEdit.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Trackers.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\Trackers.js">
+      <SubType>Content</SubType>
+    </Content>
+    <None Include="config.xml" />
+    <Content Include="css\dx.spa.css" />
+    <Content Include="css\dx.common.css" />
+    <Content Include="css\dx.android.holo-dark.css" />
+    <Content Include="css\dx.android.holo-light.css" />
+    <Content Include="css\dx.android5.light.css" />
+    <Content Include="css\dx.light.css" />
+    <Content Include="css\dx.dark.css" />
+    <Content Include="css\dx.ios.default.css" />
+    <Content Include="css\dx.ios7.default.css" />
+    <Content Include="css\dx.win8.black.css" />
+    <Content Include="css\dx.win8.white.css" />
+    <Content Include="css\dx.tizen.black.css" />
+    <Content Include="css\dx.tizen.white.css" />
+    <Content Include="layouts\Navbar\NavbarLayout.css" />
+    <Content Include="layouts\Navbar\NavbarLayout.html" />
+    <Content Include="layouts\Navbar\NavbarLayout.js" />
+    <Content Include="layouts\Pivot\PivotLayout.css" />
+    <Content Include="layouts\Pivot\PivotLayout.html" />
+    <Content Include="layouts\Pivot\PivotLayout.js" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.js" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.css" />
+    <Content Include="layouts\SlideOut\SlideOutLayout.html" />
+    <Content Include="layouts\Empty\EmptyLayout.js" />
+    <Content Include="layouts\Empty\EmptyLayout.css" />
+    <Content Include="layouts\Empty\EmptyLayout.html" />
+    <Content Include="layouts\Simple\SimpleLayout.js" />
+    <Content Include="layouts\Simple\SimpleLayout.css" />
+    <Content Include="layouts\Simple\SimpleLayout.html" />
+    <Content Include="layouts\Popup\PopupLayout.js" />
+    <Content Include="layouts\Popup\PopupLayout.css" />
+    <Content Include="layouts\Popup\PopupLayout.html" />
+    <Content Include="layouts\Desktop\DesktopLayout.js" />
+    <Content Include="layouts\Desktop\DesktopLayout.css" />
+    <Content Include="layouts\Desktop\DesktopLayout.html" />
+    <Content Include="layouts\Split\SplitLayout.js" />
+    <Content Include="layouts\Split\SplitLayout.css" />
+    <Content Include="layouts\Split\SplitLayout.html" />
+    <Content Include="js\localization\dx.all.de.js" />
+    <Content Include="js\localization\dx.all.ja.js" />
+    <Content Include="js\localization\dx.all.ru.js" />
+    <Content Include="js\dx.all.js" />
+    <Content Include="js\dx.all.debug.js" />
+    <Content Include="js\globalize.min.js" />
+    <Content Include="js\jquery-1.11.2.min.js" />
+    <Content Include="js\jquery-2.1.3.min.js" />
+    <Content Include="js\knockout-3.3.0.js" />
+    <Content Include="packages.config">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-localization\dx.webappjs.de.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-localization\dx.webappjs.ja.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-localization\dx.webappjs.ru.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-core.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-core.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-framework.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-framework.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-charts.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-charts.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-core.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-core.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-gauges.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-gauges.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-rangeselector.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-rangeselector.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-sparklines.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-sparklines.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-vectormap.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-viz-vectormap.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-widgets-base.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-widgets-base.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-widgets-web.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\devextreme-modules\dx.module-widgets-web.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\dx.chartjs.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\dx.chartjs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\dx.webappjs.debug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\dx.webappjs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.11.0.intellisense.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.11.0.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.11.0.min.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.11.0.min.map">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.af-ZA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.af.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.am-ET.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.am.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-AE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-BH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-DZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-EG.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-IQ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-JO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-KW.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-LB.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-LY.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-MA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-OM.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-QA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-SA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-SY.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-TN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar-YE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ar.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.arn-CL.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.arn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.as-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.as.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.az-Cyrl-AZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.az-Cyrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.az-Latn-AZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.az-Latn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.az.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ba-RU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ba.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.be-BY.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.be.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bg-BG.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bg.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bn-BD.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bn-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bo-CN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.br-FR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.br.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bs-Cyrl-BA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bs-Cyrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bs-Latn-BA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bs-Latn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.bs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ca-ES.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ca.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.co-FR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.co.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.cs-CZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.cs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.cy-GB.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.cy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.da-DK.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.da.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.de-AT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.de-CH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.de-DE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.de-LI.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.de-LU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.de.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.dsb-DE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.dsb.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.dv-MV.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.dv.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.el-GR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.el.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-029.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-AU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-BZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-CA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-GB.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-IE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-JM.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-MY.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-NZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-PH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-SG.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-TT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-US.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-ZA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.en-ZW.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-AR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-BO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-CL.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-CO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-CR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-DO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-EC.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-ES.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-GT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-HN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-MX.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-NI.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-PA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-PE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-PR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-PY.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-SV.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-US.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-UY.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es-VE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.es.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.et-EE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.et.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.eu-ES.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.eu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fa-IR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fa.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fi-FI.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fi.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fil-PH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fil.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fo-FO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fr-BE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fr-CA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fr-CH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fr-FR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fr-LU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fr-MC.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fy-NL.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.fy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ga-IE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ga.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.gd-GB.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.gd.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.gl-ES.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.gl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.gsw-FR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.gsw.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.gu-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.gu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ha-Latn-NG.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ha-Latn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ha.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.he-IL.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.he.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hi-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hi.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hr-BA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hr-HR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hsb-DE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hsb.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hu-HU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hy-AM.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.hy.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.id-ID.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.id.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ig-NG.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ig.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ii-CN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ii.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.is-IS.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.is.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.it-CH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.it-IT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.it.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.iu-Cans-CA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.iu-Cans.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.iu-Latn-CA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.iu-Latn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.iu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ja-JP.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ja.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ka-GE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ka.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.kk-KZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.kk.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.kl-GL.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.kl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.km-KH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.km.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.kn-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.kn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ko-KR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ko.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.kok-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.kok.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ky-KG.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ky.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.lb-LU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.lb.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.lo-LA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.lo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.lt-LT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.lt.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.lv-LV.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.lv.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mi-NZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mi.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mk-MK.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mk.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ml-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ml.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mn-Cyrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mn-MN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mn-Mong-CN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mn-Mong.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.moh-CA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.moh.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mr-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ms-BN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ms-MY.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ms.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mt-MT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.mt.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nb-NO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nb.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ne-NP.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ne.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nl-BE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nl-NL.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nn-NO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.no.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nso-ZA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.nso.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.oc-FR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.oc.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.or-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.or.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.pa-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.pa.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.pl-PL.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.pl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.prs-AF.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.prs.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ps-AF.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ps.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.pt-BR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.pt-PT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.pt.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.qut-GT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.qut.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.quz-BO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.quz-EC.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.quz-PE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.quz.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.rm-CH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.rm.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ro-RO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ro.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ru-RU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ru.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.rw-RW.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.rw.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sa-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sa.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sah-RU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sah.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.se-FI.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.se-NO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.se-SE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.se.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.si-LK.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.si.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sk-SK.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sk.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sl-SI.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sma-NO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sma-SE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sma.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.smj-NO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.smj-SE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.smj.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.smn-FI.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.smn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sms-FI.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sms.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sq-AL.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sq.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Cyrl-BA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Cyrl-CS.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Cyrl-ME.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Cyrl-RS.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Cyrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Latn-BA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Latn-CS.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Latn-ME.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Latn-RS.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr-Latn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sv-FI.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sv-SE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sv.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sw-KE.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.sw.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.syr-SY.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.syr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ta-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ta.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.te-IN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.te.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tg-Cyrl-TJ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tg-Cyrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tg.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.th-TH.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.th.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tk-TM.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tk.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tn-ZA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tr-TR.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tr.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tt-RU.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tt.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tzm-Latn-DZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tzm-Latn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.tzm.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ug-CN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ug.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.uk-UA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.uk.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ur-PK.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.ur.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.uz-Cyrl-UZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.uz-Cyrl.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.uz-Latn-UZ.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.uz-Latn.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.uz.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.vi-VN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.vi.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.wo-SN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.wo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.xh-ZA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.xh.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.yo-NG.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.yo.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-CHS.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-CHT.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-CN.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-Hans.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-Hant.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-HK.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-MO.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-SG.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh-TW.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zh.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zu-ZA.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.culture.zu.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\cultures\globalize.cultures.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\jquery.globalize\globalize.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\GPSSystems.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\GPSSystems.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\greeting.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\greeting.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\home.dxview" />
+    <Content Include="views\home.css" />
+    <Content Include="views\home.js" />
+    <Content Include="views\about.dxview" />
+    <Content Include="views\blank.html" />
+    <Content Include="app.config.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
+    <Folder Include="Content\layouts\" />
+    <Folder Include="Content\layouts\Desktop\" />
+    <Folder Include="Content\layouts\Empty\" />
+    <Folder Include="css\" />
+    <Folder Include="js\" />
+    <Folder Include="js\localization\" />
+    <Folder Include="layouts\" />
+    <Folder Include="layouts\Desktop\" />
+    <Folder Include="layouts\Empty\" />
+    <Folder Include="layouts\Navbar\" />
+    <Folder Include="layouts\Pivot\" />
+    <Folder Include="layouts\Popup\" />
+    <Folder Include="layouts\Simple\" />
+    <Folder Include="layouts\SlideOut\" />
+    <Folder Include="layouts\Split\" />
+    <Folder Include="data" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Scripts\devextreme-localization\" />
+    <Folder Include="Scripts\devextreme-modules\" />
+    <Folder Include="Scripts\jquery.globalize\" />
+    <Folder Include="Scripts\jquery.globalize\cultures\" />
+    <Folder Include="views\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <Target Name="Build">
+    <!--
+    <Message Text="'$(MSBuildToolsPath)'"></Message>
+    -->
+    <Message Text="Build JSProject '$(MSBuildProjectFile)':" Importance="high">
+    </Message>
+    <Message Text="Copying references to output dir." Importance="high" />
+    <MSBuild Targets="Build" Projects="@(ProjectReference)" Properties="OutputPath=$([System.IO.Path]::GetFullPath('$(OutputPath)'))">
+    </MSBuild>
+    <Message Text="Copying files to output dir." Importance="high" />
+    <Copy SourceFiles="@(Content)" DestinationFiles="@(Content->'$(OutputPath)%(RelativeDir)%(Filename)%(Extension)')" />
+    <Message Text="Finished Build JSProject '$(MSBuildProjectFile)'." Importance="high">
+    </Message>
+  </Target>
+  <Target Name="CreateManifestResourceNames" Condition="'@(ResxWithNoCulture)@(ResxWithCulture)@(NonResxWithNoCulture)@(NonResxWithCulture)'!=''" />
+  <Target Name="Rebuild" DependsOnTargets="Clean;Build">
+  </Target>
+  <Target Name="Clean">
+    <!--
+    <Message Text="Cleaning Output files..." Importance="high" />
+    <Delete Files="@([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+    -->
+    <Message Text="Cleaning Output dir ($([System.IO.Path]::GetFullPath('$(OutputPath)')))..." Importance="high" />
+    <RemoveDir Directories="$([System.IO.Path]::GetFullPath('$(OutputPath)'))" />
+  </Target>
+</Project>

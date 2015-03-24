@@ -1,0 +1,5 @@
+<div data-options="dxView : { name: 'greeting', title: 'greeting' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <h1 data-bind="text: message"></h1>
+    </div>
+</div>

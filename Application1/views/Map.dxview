@@ -1,0 +1,19 @@
+<div data-options="dxView : { name: 'Map', title: 'Map' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        <div style="width: 100%" id="map" data-bind="dxMap: {
+            markers: mapMarkers,
+            readyAction: mapReady,
+            zoom: 14,
+            provider: 'google',
+             controls: true,
+     width: null
+            }"></div>
+
+        <div data-bind="dxList:{ dataSource: listDataSource,  pullRefreshEnabled: true }">
+            <div data-options="dxTemplate:{ name:'item' }">
+                <h1 data-bind="text: ID_Tracker"></h1>
+                <p><b>Latitude</b>: <i data-bind="text: Latitude"></i></p>
+            </div>
+        </div>
+    </div>
+</div>
