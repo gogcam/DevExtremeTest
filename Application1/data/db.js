@@ -6,6 +6,7 @@
     var SERVICE_URL_UPDATE_TRACKER = 'http://gpswebservice.sorba.ch/GPSWebService/Sys/rest/UpdateTracker'
 
     var x;
+    var test;
 
     function postJson(url, jsObj, whenSuccess, whenError) {
         debugger;
