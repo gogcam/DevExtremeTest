@@ -1,11 +1,11 @@
 ﻿(function ($, DX) {
-    var SERVICE_URL_GET_TRACKERS = 'http://devsk-nb1-win81/GPSWebService/Sys/rest/GetTrackers/%7B%22KundenNr%22:%2236373%22,%22Domain%22:%22KMUmitKST14%22%7D'
-    var SERVICE_URL_UPDATE_TRACKER = 'http://devsk-nb1-win81/GPSWebService/Sys/rest/UpdateTracker'
-    var SERVICE_URL_GET_GPSSYSTEMS = 'http://devsk-nb1-win81/GPSWebService/Sys/rest/GetGPSSystems'
+    //var SERVICE_URL_GET_TRACKERS = 'http://devsk-nb1-win81/GPSWebService/Sys/rest/GetTrackers/%7B%22KundenNr%22:%2236373%22,%22Domain%22:%22KMUmitKST14%22%7D'
+    //var SERVICE_URL_UPDATE_TRACKER = 'http://devsk-nb1-win81/GPSWebService/Sys/rest/UpdateTracker'
+    //var SERVICE_URL_GET_GPSSYSTEMS = 'http://devsk-nb1-win81/GPSWebService/Sys/rest/GetGPSSystems'
 
-    //var SERVICE_URL_GET_TRACKERS = 'http://gpswebservice.sorba.ch/GPSWebService/Sys/rest/GetTrackers/%7B%22KundenNr%22:%2236373%22,%22Domain%22:%22KMUmitKST14%22%7D'
-    //var SERVICE_URL_UPDATE_TRACKER = 'http://gpswebservice.sorba.ch/GPSWebService/Sys/rest/UpdateTracker'
-    //var SERVICE_URL_GET_GPSSYSTEMS = 'http://gpswebservice.sorba.ch/GPSWebService/Sys/rest/GetGPSSystems'
+    var SERVICE_URL_GET_TRACKERS = 'http://gpswebservice.sorba.ch/GPSWebService/Sys/rest/GetTrackers/%7B%22KundenNr%22:%2236373%22,%22Domain%22:%22KMUmitKST14%22%7D'
+    var SERVICE_URL_UPDATE_TRACKER = 'http://gpswebservice.sorba.ch/GPSWebService/Sys/rest/UpdateTracker'
+    var SERVICE_URL_GET_GPSSYSTEMS = 'http://gpswebservice.sorba.ch/GPSWebService/Sys/rest/GetGPSSystems'
 
     var x;
 
@@ -60,6 +60,7 @@
             //  return x;
         },
         load: function (loadOptions) {
+            debugger;
             return dbImpl._sendRequest(SERVICE_URL_GET_TRACKERS, 'GET');
         },
         insert: function (params) {
@@ -71,7 +72,7 @@
         },
         remove: function (params) {
             return dbImpl._sendRequest('DELETE', params);
-        }
+        },
     };
 
     Application1.db = new DevExpress.data.CustomStore(dbImpl);
