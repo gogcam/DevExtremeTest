@@ -103,9 +103,6 @@
     <Content Include="views\Map.js">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="views\TrackerAdd.dxview">
-      <SubType>Content</SubType>
-    </Content>
     <Content Include="views\TrackerAdd2.dxview">
       <SubType>Content</SubType>
     </Content>
@@ -1375,12 +1372,10 @@
     <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="data\TrackerTS.ts" />
     <TypeScriptCompile Include="ts\dx.all.d.ts" />
     <TypeScriptCompile Include="ts\globalize.d.ts" />
     <TypeScriptCompile Include="ts\jquery.d.ts" />
     <TypeScriptCompile Include="ts\knockout.d.ts" />
-    <TypeScriptCompile Include="views\TrackerAdd.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <Target Name="Build">

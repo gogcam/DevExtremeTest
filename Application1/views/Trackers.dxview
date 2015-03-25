@@ -1,9 +1,10 @@
 <div data-options="dxView : { name: 'Trackers', title: 'Trackers' } " >
     <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
         <div data-bind="dxCommand: { title: 'Add', onExecute: btnAddClick, id: 'edit' }"></div>
-        <div data-bind="dxList:{ dataSource: dsTrackers,  pullRefreshEnabled: true, itemClickAction: onItemClick }">
+        <div data-bind="dxList:{ dataSource: dsTrackers,  pullRefreshEnabled: true, itemClickAction: onItemClick, autoPagingEnabled: false }">
             <div data-options="dxTemplate:{ name:'item' }">
-                <h1 data-bind="text: Bezeichnung"></h1>
+                <img data-bind="attr: { src: 'data:image/png;base64,' + Icon}" />
+                <p data-bind="text: Bezeichnung"></p>
                 <p><b>ID_Tracker</b>: <i data-bind="text: ID"></i></p>
             </div>
         </div>
