@@ -1,4 +1,4 @@
-﻿// NOTE object below must be a valid JSON
+// NOTE object below must be a valid JSON
 window.Application1 = $.extend(true, window.Application1, {
   "config": {
     "layoutSet": "navbar",
@@ -27,7 +27,7 @@ window.Application1 = $.extend(true, window.Application1, {
         "title": "Trackers",
         "onExecute": "#Trackers",
         "icon": "trackers"
-      }
+      },
     ]
   }
 });

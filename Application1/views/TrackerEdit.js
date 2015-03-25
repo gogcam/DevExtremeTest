@@ -1,16 +1,22 @@
 ﻿Application1.TrackerEdit = function (params) {
 
+    debugger;
+    var t = new TrackerType(params.obj);
+
     var viewModel = {
-        Tracker: params.obj,
-        ID: params.obj.ID,
-        Bezeichnung: ko.observable(params.obj.Bezeichnung),
-        MaxRunawayTime: ko.observable(params.obj.MaxRunawayTime),
+        test: t,
+
+        //Bezeichnung: ko.observable(params.obj.Bezeichnung),
+        //MaxRunawayTime: ko.observable(params.obj.MaxRunawayTime),
 
         btnSaveClick: function (e) {
-            params.obj.Bezeichnung = viewModel.Bezeichnung();
-            params.obj.MaxRunawayTime = viewModel.MaxRunawayTime();
+            debugger;
+            var request = ko.mapping.toJS(viewModel.test);
 
-            Application1.db.update(params.obj).done(function (data) {
+            //params.obj.Bezeichnung = viewModel.Bezeichnung();
+            //params.obj.MaxRunawayTime = viewModel.MaxRunawayTime();
+
+            Application1.db.update(request).done(function (data) {
                 Application1.app.back();
             });
         }
@@ -18,3 +24,27 @@
 
     return viewModel;
 };
+
+
+//Application1.TrackerEdit = function (params) {
+
+//    var viewModel = {
+//        test: ko.mapping.fromJS(params.obj),
+
+//        ID: params.obj.ID,
+//        //Bezeichnung: ko.observable(params.obj.Bezeichnung),
+//        //MaxRunawayTime: ko.observable(params.obj.MaxRunawayTime),
+
+//        btnSaveClick: function (e) {
+//            debugger;
+//            //params.obj.Bezeichnung = viewModel.Bezeichnung();
+//            //params.obj.MaxRunawayTime = viewModel.MaxRunawayTime();
+
+//            Application1.db.update(params.obj).done(function (data) {
+//                Application1.app.back();
+//            });
+//        }
+//    };
+
+//    return viewModel;
+//};

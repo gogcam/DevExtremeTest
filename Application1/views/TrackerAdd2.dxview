@@ -1,14 +1,13 @@
-<div data-options="dxView : { name: 'TrackerEdit', title: 'TrackerEdit' } " >
+<div data-options="dxView : { name: 'TrackerAdd2', title: 'TrackerAdd2' } " >
     <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
-        ID_Tracker:<div data-bind="dxTextBox: {value: test.ID, disabled: true}"></div>
-        INR:<div data-bind="dxTextBox: {value: test.INR,  disabled: true}"></div>
+        INR:<div data-bind="dxTextBox: {value: test.INR}"></div>
         Bezeichnung:<div data-bind="dxTextBox: {value: test.Bezeichnung}"></div>
         Stamm:<div data-bind="dxTextBox: {value: test.Stamm}"></div>
         SerialNumber:<div data-bind="dxTextBox: {value: test.SerialNumber}"></div>
+        KundenNr:<div data-bind="dxTextBox: {value: test.KundenNr}"></div>
+        Domain:<div data-bind="dxTextBox: {value: test.Domain}"></div>
         ID_GPSSystem:<div data-bind="dxNumberBox:{min:0, max:3, value:test.ID_GPSSystem, showSpinButtons: true}"></div>
         Max. Ausreisezeit:<div data-bind="dxNumberBox:{min:0, max:100, value:test.MaxRunawayTime, showSpinButtons: true}"></div>
-        <!--Bezeichnung:<div data-bind="dxTextBox: {value: Bezeichnung}"></div>
-        Max. Ausreisezeit:<div data-bind="dxNumberBox:{min:0, max:100, value:MaxRunawayTime, showSpinButtons: true}"></div>-->
-        <div data-bind="dxButton: {text: 'Save', onClick: btnSaveClick}"></div>       
+        <div data-bind="dxButton: {text: 'Save', onClick: btnSaveClick}"></div>           
     </div>
 </div>

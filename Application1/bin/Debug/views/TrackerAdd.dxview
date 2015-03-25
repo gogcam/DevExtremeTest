@@ -1,0 +1,8 @@
+<div data-options="dxView : { name: 'TrackerAdd', title: 'TrackerAdd' } " >
+    <div  data-options="dxContent : { targetPlaceholder: 'content' } " >
+        ID_Tracker:<div data-bind="dxTextBox: {value: ID, disabled: true}"></div>
+        Bezeichnung:<div data-bind="dxTextBox: {value: Bezeichnung}"></div>
+        Max. Ausreisezeit:<div data-bind="dxNumberBox:{min:0, max:100, value:MaxRunawayTime, showSpinButtons: true}"></div>
+        <div data-bind="dxButton: {text: 'Save', onClick: btnSaveClick}"></div>       
+    </div>
+</div>

@@ -8,6 +8,9 @@
     <ApplicationPage>index.html</ApplicationPage>
     <RootNamespace>Application1</RootNamespace>
     <Name>Application1</Name>
+    <ApkDexFilePackageName>com.devextreme.Application1</ApkDexFilePackageName>
+    <XapPackagePublisherID>{606b053c-81fc-43b2-86ea-b7fb5437b78f}</XapPackagePublisherID>
+    <XapPackageProductID>{d8657f67-6b99-4c43-893b-5665e1b626d3}</XapPackageProductID>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -84,14 +87,29 @@
     <Content Include="data\db.js">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="data\TrackerManager.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="index.js" />
     <Content Include="cordova.js" />
     <Content Include="index.html" />
     <Content Include="index.css" />
+    <Content Include="js\knockout.mapping-latest.js">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="views\Map.dxview">
       <SubType>Content</SubType>
     </Content>
     <Content Include="views\Map.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TrackerAdd.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TrackerAdd2.dxview">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="views\TrackerAdd2.js">
       <SubType>Content</SubType>
     </Content>
     <Content Include="views\TrackerEdit.dxview">
@@ -1353,7 +1371,16 @@
     <Folder Include="Scripts\devextreme-modules\" />
     <Folder Include="Scripts\jquery.globalize\" />
     <Folder Include="Scripts\jquery.globalize\cultures\" />
+    <Folder Include="ts\" />
     <Folder Include="views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="data\TrackerTS.ts" />
+    <TypeScriptCompile Include="ts\dx.all.d.ts" />
+    <TypeScriptCompile Include="ts\globalize.d.ts" />
+    <TypeScriptCompile Include="ts\jquery.d.ts" />
+    <TypeScriptCompile Include="ts\knockout.d.ts" />
+    <TypeScriptCompile Include="views\TrackerAdd.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <Target Name="Build">
